@@ -10,7 +10,58 @@ package model;
  * @author archil
  */
 public class Feature {
+    private Product owner;
+    private String name;
+    private Object value;
     
+    public  Feature(Product owner){
+        this.owner=owner;
+    }
+    public  Feature(Product owPner,String name, Object value){
+        this.name=name;
+        this.value= value;
+    }
+
+    
+
+    public Product getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Product owner) {
+        this.owner = owner;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Object getValue() {
+        return value;
+    }
+
+    public void setValue(Object value) {
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        
+        if (owner != null) {
+        return "New Feature";
+    } else {
+        return "New Feature";
+    }
+//        return name;// Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+//        return "Feature [Name: " + name + ", Value: " + value + ", Owner: " + owner.getName() + "]";
+    }
+    
+    
+     
 
 }
 
